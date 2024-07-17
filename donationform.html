@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now</title>
+    <style>
+        body{
+            background-image: url(tablets.jpg);
+            /* min-height:100vh ; 
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            width: 100%; */
+        }
+        input[type=text],
+        select {
+            font-size: 15;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .first {
+            
+            background-color: rgb(173, 160, 160);
+            width: 400px;
+            margin: 5px auto 0px auto;
+            
+        }
+        input[type=submit]{
+            background-color: transparent;
+            margin-left: 95px;            
+           padding-left: 100px;
+            padding-right: 100px;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 40px;" >Donation Form </h1>
+    <form action="donationform.php" class="first">
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name : "><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name : "><br>
+        <input type="text" id="email" name="email" placeholder="Enter your email address : "><br>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number : "><br>
+        <input type="text" id="address" name="address" placeholder="Enter your current address : "><br>
+        <input type="text" id="details" name="details" placeholder="Enter Medicine details : "><br>
+        <input type="text" id="date" name="date" placeholder="Enter medicine expiry details  : "><br>
+        <select name="price" id="price">
+            <option value="below 1000">Below 1000</option>
+            <option value="above 1000">Above 1000</option>
+            <option value="below 2000">Below 2000</option>
+        </select>
+        <input type="submit" class="btn" value="Submit">
+    </form>
+</body>
+</html>
